@@ -19,7 +19,7 @@ public class Plugin : BaseUnityPlugin
 
         //Logging Info
         log = Logger;
-        Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+        Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!"); 
     }
 }
 

@@ -1,7 +1,6 @@
-using Gameplay.Carryables;
+﻿using Gameplay.Carryables;
 using HarmonyLib;
 using System;
-using UI.PlayerProfile;
 using VoidManager;
 using VoidManager.MPModChecks;
 
