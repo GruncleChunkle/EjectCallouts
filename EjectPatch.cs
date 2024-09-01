@@ -1,5 +1,3 @@
-﻿using BepInEx.Logging;
-using Client.Utils;
 using Gameplay.Carryables;
 using HarmonyLib;
 using System;
