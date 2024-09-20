@@ -7,7 +7,7 @@ namespace EjectCallouts;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 [BepInProcess("Void Crew.exe")]
-[BepInDependency("VoidManager")]
+[BepInDependency(VoidManager.MyPluginInfo.PLUGIN_GUID)]
 public class Plugin : BaseUnityPlugin
 {
     internal static ManualLogSource log;
@@ -21,11 +21,4 @@ public class Plugin : BaseUnityPlugin
         log = Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!"); 
     }
-}
-
-public static class MyPluginInfo
-{
-    public const string PLUGIN_GUID = "Gruncle.EjectCallouts";
-    public const string PLUGIN_NAME = "EjectCallouts";
-    public const string PLUGIN_VERSION = "1.0.0";
 }
